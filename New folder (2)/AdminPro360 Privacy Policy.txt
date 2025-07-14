@@ -1,0 +1,106 @@
+ADMINPRO360 SOLUTIONS PRIVACY POLICY
+Effective Date: 20/06/2025
+Last Updated: 20/06/2025
+
+1. Information We Collect
+A. Personal Data
+We collect when you voluntarily provide:
+
+Identifiers: Name, email, phone, business address
+
+Payment Data: Billing address, last 4 digits of payment cards (processed via Stripe/PayPal)
+
+Technical Data: IP address, device type, browser fingerprint
+
+Usage Data: Pages visited, buttons clicked, session duration
+
+B. Automatic Collection
+Via cookies and similar technologies:
+
+Essential: Login status, shopping cart (necessary for service)
+
+Analytical: Google Analytics (anonymized where possible)
+
+Marketing: Facebook Pixel (opt-out required for EU/UK users)
+
+2. Legal Basis for Processing
+Purpose	Legal Basis
+Service delivery	Contractual necessity
+Payment processing	Legal obligation
+Marketing	Consent (opt-in) or legitimate interest
+Fraud prevention	Legal compliance
+3. How We Use Data
+Strictly to:
+
+Provide and improve services
+
+Process payments
+
+Send service-related emails (invoices, updates)
+
+Marketing: Only with explicit consent (unsubscribe in every email)
+
+4. Data Sharing & Disclosure
+We do not sell data. Limited sharing with:
+
+Processors: Stripe (payments), Zoom (coaching calls) under GDPR-compliant contracts
+
+Legal Compliance: When required by subpoena or to prevent harm
+
+Business Transfers: In case of merger/acquisition (with confidentiality protections)
+
+5. International Transfers
+Data may transit through:
+
+EU → US (under Standard Contractual Clauses)
+
+Canada → US (PIPEDA-compliant providers)
+
+6. Data Retention
+Data Type	Retention Period
+Account information	3 years post-termination
+Payment records	7 years (legal requirement)
+Cookies	1-24 months (depending on type)
+7. Your Rights
+You may:
+
+Access/Portability: Request copy of your data
+
+Correction: Update inaccurate information
+
+Deletion: Request erasure (exceptions apply)
+
+Opt-Out: Of marketing or automated decision-making
+
+Submit requests to: privacy@adminpro360.com
+We respond within 30 days (10 days for CCPA requests).
+
+8. Security Measures
+We implement:
+
+AES-256 encryption for data at rest
+
+TLS 1.2+ for data in transit
+
+Annual penetration testing
+
+Employee confidentiality agreements
+
+9. Children’s Privacy
+Services are not directed to users under 16. We will delete underage accounts upon verification.
+
+10. Policy Changes
+We’ll notify users of material changes via:
+
+Website banner for 30 days
+
+Email for account holders
+Continued use constitutes acceptance.
+
+11. Contact Information
+Data Controller:
+AdminPro360 Solutions LLC
+[Your Physical Address]
+
+Data Protection Officer:
+[Name] at dpo@adminpro360.com
