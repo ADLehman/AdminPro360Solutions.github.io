@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPro360 Solutions | 360° Administrative Support Services</title>
+    <meta name="description" content="Comprehensive administrative solutions for businesses. Virtual assistants, data management, scheduling & back-office support. Save 15+ hours weekly with our 360° services.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="virtual assistant, administrative support, business solutions, 360 services, data management, back-office support">
+    <meta name="author" content="AdminPro360 Solutions">
+    <meta property="og:title" content="AdminPro360 Solutions | Full-Service Administrative Support">
+    <meta property="og:description" content="Comprehensive 360° administrative solutions for businesses of all sizes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adminpro360solutions.com">
+    <meta property="og:image" content="https://adminpro360solutions.com/images/social-preview.jpg">
+    <link rel="canonical" href="https://adminpro360solutions.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS Reset and Base Styles */
+        :root {
+            --primary: #0A2463;
+            --secondary: #3E92CC;
+            --accent: #FF7D00;
+            --light: #F8F9FA;
+            --dark: #212529;
+            --success: #28A745;
+            --warning: #FFC107;
+            --text: #495057;
+            --text-light: #6C757D;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary);
+            color: white;
+            box-shadow: 0 4px 15px rgba(62, 146, 204, 0.4);
+        }
+        
+        .btn-primary:hover {
+            background-color: #2e7aa8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(62, 146, 204, 0.6);
+        }
+        
+        .btn-secondary {
+            background-color: white;
+            color: var(--primary);
+            border: 2px solid var(--secondary);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--secondary);
+            color: white;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--secondary), var(--accent));
+            margin: 15px auto 30px;
+            border-radius: 2px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .logo-text span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            font-weight: 500;
+            position: relative;
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            transition: var(--transition);
+        }
+        
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary), #1E3B8B);
+            color: white;
+            padding: 180px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('https://via.placeholder.com/800x600/3E92CC/FFFFFF?text=Dashboard+UI') no-repeat center right/contain;
+            opacity: 0.2;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .hero-btns .btn-secondary {
+            color: white;
+            border-color: white;
+        }
+        
+        .hero-btns .btn-secondary:hover {
+            background-color: white;
+            color: var(--primary);
+        }
+        
+        /* Features Section */
+        .features {
+            background-color: white;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+        
+        .feature-card:hover .feature-icon {
+            transform: rotate(15deg) scale(1.1);
+            color: var(--accent);
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            background-color: #F5F7FA;
+        }
+        
+        .pricing-toggle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        
+        .toggle-label {
+            margin: 0 15px;
+            font-weight: 500;
+        }
+        
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+        }
+        
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        
+        input:checked + .slider {
+            background-color: var(--secondary);
+        }
+        
+        input:checked + .slider:before {
+            transform: translateX(30px);
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .pricing-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            text-align: center;
+        }
+        
+        .pricing-card.popular {
+            border: 2px solid var(--accent);
+            transform: scale(1.02);
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background-color: var(--accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pricing-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            font-weight: normal;
+            color: var(--text-light);
+        }
+
+        .price {
+            position: relative;
+            height: 1.5em; /* Adjust based on your content height */
+            overflow: hidden;
+        }
+
+        .price span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: all 0.4s ease;
+        }
+
+        .price .active {
+            opacity: 1;
+            transform: translateY(0);
+        z-index: 1;
+        }
+
+        
+        .price-desc {
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+        
+        .pricing-features {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        .pricing-features li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .pricing-features li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--success);
+        }
+        
+        .pricing-features li.disabled {
+            color: var(--text-light);
+        }
+        
+        .pricing-features li.disabled:before {
+            content: "\f00d";
+            color: var(--text-light);
+        }
+
+        /* Coaching Section Specific Styles */
+        .coaching {
+            background: linear-gradient(135deg, #f8fafc 0%, #eef2f6 100%);
+        }
+        
+        .podcast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .episode-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .episode-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(10, 36, 99, 0.15);
+        }
+        
+        .episode-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        .audio-player {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        a:link {
+            color: green;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            text-decoration: underline;
+        }
+        
+        .subscription-form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            max-width: 600px;
+            margin: 40px auto;
+        }
+        
+        .subscription-form input[type="email"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        
+        .coaching-programs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .program-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .program-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .program-price {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin: 15px 0;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background-color: white;
+        }
+        
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .testimonial-slide {
+            background-color: #F8F9FA;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            display: none;
+        }
+        
+        .testimonial-slide.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .testimonial-content {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .testimonial-content:before,
+        .testimonial-content:after {
+            content: '"';
+            font-size: 3rem;
+            color: var(--secondary);
+            opacity: 0.3;
+            position: absolute;
+        }
+        
+        .testimonial-content:before {
+            top: -20px;
+            left: -10px;
+        }
+        
+        .testimonial-content:after {
+            bottom: -40px;
+            right: -10px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .author-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 3px solid var(--secondary);
+        }
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        .author-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        .testimonial-rating {
+            color: var(--warning);
+            margin: 10px 0;
+        }
+        
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .slider-dot.active {
+            background-color: var(--secondary);
+            transform: scale(1.2);
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, var(--primary), #1E3B8B);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .cta h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .faq-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+
+  .faq-card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+  }
+
+  .faq-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .faq-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(10, 36, 99, 0.1);
+  }
+
+  .faq-card .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  /* Coaching Section Specific Styles */
+        .coaching {
+            background: linear-gradient(135deg, #f8fafc 0%, #eef2f6 100%);
+        }
+        
+        .podcast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .episode-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .episode-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(10, 36, 99, 0.15);
+        }
+        
+        .episode-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        .audio-player {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        
+        .subscription-form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            max-width: 600px;
+            margin: 40px auto;
+        }
+        
+        .subscription-form input[type="email"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        
+        .coaching-programs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .program-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .program-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .program-price {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin: 15px 0;
+        }
+</style>
+
+<style>
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-col ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 992px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero:before {
+                width: 100%;
+                opacity: 0.1;
+            }
+            
+            .hero-content {
+                max-width: 100%;
+                text-align: center;
+            }
+            
+            .hero-btns {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section {
+                padding: 60px 0;
+            }
+            
+            .header-container {
+                padding: 15px 20px;
+            }
+            
+            nav {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                box-shadow: var(--shadow);
+                padding: 20px;
+                transform: translateY(-150%);
+                transition: var(--transition);
+                z-index: 999;
+            }
+            
+            nav.active {
+                transform: translateY(0);
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 15px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card.popular {
+                transform: none;
+            }
+        }
+
+        /* Add this new form styling to your existing CSS */
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(10, 36, 99, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--primary);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: 'Poppins', sans-serif;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            border-color: var(--secondary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(62, 146, 204, 0.2);
+        }
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background-color: #2e7aa8;
+            transform: translateY(-2px);
+        }
+        
+        .form-note {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        @media (max-width: 576px) {
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="c:\Users\angel\OneDrive\Documents\Backed up\Desktop\New folder (2)\ap360.png" alt="AdminPro360 Logo">
+                <div class="logo-text">AdminPro<span>360</span></div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#coaching">Coaching</a></li>  <!-- New tab -->
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>360° Administrative Support That Scales With You</h1>
+                <p>Spend 15 minutes briefing us, save 15 hours weekly with our comprehensive virtual assistance and back-office solutions.</p>
+                <div class="hero-btns">
+                    <a href="#pricing" class="btn btn-primary">View Plans</a>
+                    <a href="c:\Users\angel\OneDrive\Documents\Backed up\Desktop\New folder (2)\From Chaos to Clarity The AdminPro360 Animated.mp4" class="btn btn-secondary"><i class="fas fa-play"></i> Watch Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features" id="features">
+        <div class="container">
+            <h2 class="section-title">Our Comprehensive Services</h2>
+            <p class="section-subtitle">From email management to complex project coordination, we handle it all so you can focus on growth.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Management</h3>
+                    <p>We organize your inbox, filter priorities, and respond to routine messages so you only see what matters.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Calendar & Scheduling</h3>
+                    <p>Never miss a meeting again with our proactive scheduling and calendar management services.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Management</h3>
+                    <p>Accurate data entry, CRM updates, and database maintenance to keep your operations smooth.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Customer Support</h3>
+                    <p>24/7 customer service solutions tailored to your business needs and brand voice.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Expense Reporting</h3>
+                    <p>Streamlined expense tracking and reporting to give you better financial visibility.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Project Coordination</h3>
+                    <p>End-to-end project management support to keep your initiatives on track and on budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Simple, Scalable Pricing</h2>
+            <p class="section-subtitle">Choose the plan that fits your needs. Upgrade, downgrade, or cancel with 30day notice.</p>
+            
+            <div class="pricing-toggle">
+                <span class="toggle-label">Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="billingToggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Annually <small>(Save 10%)</small></span>
+            </div>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Basic Support</h3>
+                    <div class="price" data-monthly="R4,000.00" data-annually="R43,200.00">
+                    <span>R</span>4,000.00<span>/mo</span>
+                    <span>R</span>43,200.00<span>/yr</span>
+                </div>
+            
+                <p class="price-desc">20 hours</p>
+                    <ul class="pricing-features">
+                        <li>Email & Calendar Management</li>
+                        <li>Basic Data Entry</li>
+                        <li>File Organization</li>
+                        <li>CRM Updates</li>
+                        <li class="disabled">Priority Support</li>
+                        <li class="disabled">Project Coordination</li>
+                        <li class="disabled">Dedicated Assistant</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Get Started</a>
+                </div>
+                
+                <div class="pricing-card popular">
+                <div class="popular-badge">Most Popular</div>
+                <h3>Growth Suite</h3>
+                    <div class="price" data-monthly="R22,500.00" data-annually="R243,000.00">
+                    <span>R</span>22,500.00<span>/mo</span>
+                    <span>R</span>243,000.00<span>/yr</span>
+                </div>
+                    <p class="price-desc">60 hours per month</p>
+                <ul class="pricing-features">
+                    <li>All Basic Support Features</li>
+                    <li>Priority Response (4hrs)</li>
+                    <li>Expense Reporting</li>
+                    <li>Project Coordination</li>
+                    <li>Basic Analytics</li>
+                    <li class="disabled">Dedicated Assistant</li>
+                    <li class="disabled">24/7 Support</li>
+                 </ul>
+                 <a href="#contact" class="btn btn-primary">Choose Plan</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Enterprise 360</h3>
+                    <div class="price"><span>$</span>Custom<span></span></div>
+                    <p class="price-desc">100+ hours per month</p>
+                    <ul class="pricing-features">
+                        <li>All Growth Suite Features</li>
+                        <li>Dedicated Account Manager</li>
+                        <li>24/7 Urgent Support</li>
+                        <li>Custom Workflows</li>
+                        <li>Advanced Analytics</li>
+                        <li>Team Training</li>
+                        <li>White-glove Onboarding</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+            
+            <p style="text-align: center; margin-top: 30px; font-size: 0.9rem; color: var(--text-light);">
+                *R200/hour ($15/hour Int.)  minimum 5 hours per month (Basic), R375/hour ($25/hour Int.) (Growth).
+            </p>
+            <p style="text-align: center; margin-top: 30px; font-size: 0.9rem; color: var(--text-light);">
+                *Unused hours roll over for only 15 days after cut-off date. Overflow rate: R220/hour (Basic), R400/hour (Growth).
+            </p>
+        </div>
+    </section>
+
+    <!-- Coaching Section -->
+    <section class="section coaching" id="coaching">
+        <div class="container">
+            <h2 class="section-title">Disruptive Reconstruction Coaching</h2>
+            <p class="section-subtitle">Break old patterns, build resilient habits, 
+                and master your professional evolution Combining Disruptive Reconstruction, Habit Death Cycle awareness, 
+                Shadow Work, and Atomic Reconstruction creates a powerful framework for rapid, sustainable growth. 
+                Professionals who embrace these methods outperform competitors, lead with authenticity, 
+                and thrive in uncertainty. Complete our short questionniare, <a href="https://forms.gle/Tb6fFy8X3BAusQUe6">click here.</a></p>
+            
+            <div class="podcast-grid">
+                <!-- Episode 1 with Audio Player -->
+                <div class="episode-card">
+                    <div class="episode-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>The Habit Death Cycle</h3>
+                    <p>Why we cling to destructive patterns and how to interrupt them</p>
+                    <audio controls class="audio-player">
+                        <source src="c:\Users\angel\OneDrive\Documents\Backed up\Desktop\New folder (2)\The Habit Death Cycle Podcast.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <a href="https://forms.gle/Tb6fFy8X3BAusQUe6" class="btn btn-secondary">Complete Questionnaire</a>
+                </div>
+                
+                <!-- Episode 2 -->
+                <div class="episode-card">
+                    <div class="episode-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Shadow Work for Professionals</h3>
+                    <p>Harnessing your dark side for creative problem-solving</p>
+                    <audio controls class="audio-player">
+                        <source src="c:\Users\angel\OneDrive\Documents\Backed up\Desktop\New folder (2)\Shadow work Podcast.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <a href="https://forms.gle/Tb6fFy8X3BAusQUe6" class="btn btn-secondary">Complete Questionnaire</a>
+                </div>
+                
+                <!-- Episode 3 -->
+                <div class="episode-card">
+                    <div class="episode-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Atomic Reconstruction</h3>
+                    <p>1% habit shifts that compound into transformation</p>
+                    <audio controls class="audio-player">
+                        <source src="c:\Users\angel\OneDrive\Documents\Backed up\Desktop\New folder (2)\Atomic Reconstruction Podcast.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <a href="https://forms.gle/Tb6fFy8X3BAusQUe6" class="btn btn-secondary">Complete Questionnaire</a>
+                </div>
+            </div>
+            
+            <!-- Podcast Subscription Form -->
+            <div class="subscription-form">
+                <h3>Get New Episodes Delivered</h3>
+                    <form id="podcastSubscribe" action="https://formsubmit.co/angelo@example.com" method="POST">
+                        <input type="email" name="email" placeholder="Your best email" required>
+    
+                         <!-- Optional fields -->
+                        <input type="hidden" name="_subject" value="New Podcast Subscription">
+                        <input type="hidden" name="_captcha" value="false">
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-podcast"></i> Subscribe to Podcast
+                    </button>
+                        <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
+                    </form>
+            </div>
+
+            
+            <!-- Coaching Programs -->
+            <h2 class="section-title" style="text-align: center; margin-bottom: 30px;">Coaching Programs</h2>
+            
+            <div class="coaching-programs">
+                <div class="program-card">
+                    <h3>30-Day Habit Reset</h3>
+                    <ul>
+                        <li>Daily 15-min coaching calls</li>
+                        <li>Personalized habit tracker</li>
+                        <li>Accountability partner</li>
+                        <li>Weekly progress reviews</li>
+                    </ul>
+                    <div class="program-price">R7,500</div>
+                    <a href="#contact" class="btn btn-secondary">Enroll Now</a>
+                </div>
+                
+                <div class="program-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Executive Shadow Work</h3>
+                    <ul>
+                        <li>Bi-weekly deep dive sessions</li>
+                        <li>Psychological pattern analysis</li>
+                        <li>Leadership integration toolkit</li>
+                        <li>Lifetime access to resources</li>
+                    </ul>
+                    <div class="program-price">R40,000</div>
+                    <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+                </div>
+                
+                <div class="program-card">
+                    <h3>Enterprise Transformation</h3>
+                    <ul>
+                        <li>Custom team workshops</li>
+                        <li>Organizational habit audit</li>
+                        <li>Quarterly progress retreats</li>
+                        <li>Dedicated success manager</li>
+                    </ul>
+                    <div class="program-price">Custom</div>
+                    <a href="#contact" class="btn btn-secondary">Request Proposal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Don't just take our word for it. Here's what businesses like yours are saying.</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-content">AdminPro360 transformed our operations. We went from spending 20 hours/week on admin tasks to just 5. Their team is responsive, detail-oriented, and truly understands our business needs.</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson" class="author-img">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-content">The Growth Suite plan was exactly what our scaling e-commerce business needed. We've been able to expand our customer support and back-office operations without hiring full-time staff.</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="author-img">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Founder, UrbanGoods</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-content">As a solopreneur, I was drowning in administrative work. The Basic Support plan gave me my time back and helped me focus on revenue-generating activities. Highly recommend!</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jessica Williams" class="author-img">
+                        <div class="author-info">
+                            <h4>Jessica Williams</h4>
+                            <p>Marketing Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <div class="slider-dot active" data-slide="0"></div>
+                <div class="slider-dot" data-slide="1"></div>
+                <div class="slider-dot" data-slide="2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Reclaim Your Time?</h2>
+            <p>Schedule a free 30-minute consultation to discuss your needs and how we can help streamline your operations.</p>
+            <a href="#contact" class="btn btn-primary">Get Your Free Audit</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+    <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-subtitle">Quick answers. Clear action. Let's move forward.</p>
+
+    <div class="faq-grid">
+
+      <!-- Admin Services -->
+      <div class="section-title">
+        <h2 class="section-title">Admin FAQ</h2>
+      </div>
+
+      <div class="faq-card">
+        <h3>What services do you offer?</h3>
+        <p> -I run a business and need help managing daily tasks.<br>
+            -It's overwhelming to handle admin, data, and systems alone.<br>
+            -You lose time, focus, and money trying to do it all yourself.<br>
+            -We provide 360° virtual assistant services that free you up to lead.</p>
+        <a href="#contact" class="btn btn-secondary">Streamline My Admin</a>
+      </div>
+
+      <div class="faq-card">
+        <h3>Do you work remotely or onsite?</h3>
+        <p> -I’m unsure if remote support can fit my setup.<br>
+            -Traditional admin hires are expensive and slow.<br>
+            -Delays cost opportunities. Office space adds cost.<br>
+            -We’re fully remote, agile, and built for speed.</p>
+        <a href="#contact" class="btn btn-secondary">Let's Go Remote</a>
+      </div>
+
+      <div class="faq-card">
+        <h3>Are long-term contracts required?</h3>
+        <p> -Long contracts risk locking you into the wrong fit.<br>
+            -You waste time and money if flexibility is gone.<br>
+            -Long-term contracts slow decisions.<br>
+            -No contracts. Choose hourly, daily, or monthly plans that fit your growth.</p>
+        <a href="#pricing" class="btn btn-secondary">Choose a Plan</a>
+      </div>
+
+      <div class="faq-card">
+        <h3>How fast can we start?</h3>
+        <p> -I need admin help urgently.<br>
+            -Delays in onboarding hold back progress.<br>
+            -Waiting could cost you deals, momentum, or peace of mind.<br>
+            -We onboard clients in 24 hours or less. You’re covered.</p>
+        <a href="#contact" class="btn btn-secondary">Start in 24 Hours</a>
+      </div>
+
+      <div class="faq-card">
+        <h3>Do you offer customized admin solutions?</h3>
+        <p> -My business doesn’t fit generic tools.<br>
+            -One-size-fits-all solutions miss key details.<br>
+            -Generic support leads to missed opportunities.<br>
+            -We build systems around you. Tell us your needs—we’ll handle the rest.</p>
+        <a href="#contact" class="btn btn-secondary">Request a Custom Solution</a>
+      </div>
+
+      
+
+      <!-- Coaching -->     
+        <div class="section-title">
+        <h2 class="section-title">Coaching & Training FAQ</h2>
+      </div>
+        <div class="faq-card">
+        <h3>What is Disruptive Reconstruction Coaching?</h3>
+        <p> -I’m stuck in habits that no longer serve me.<br>
+            -Repeating old cycles affects performance and fulfillment.<br>
+            -Without change, growth stagnates—personally and professionally.<br>
+            -We guide you to break old patterns and build new momentum fast.</p>
+        <a href="#coaching" class="btn btn-primary">Explore Coaching Programs</a>
+      </div> 
+
+      <div class="faq-card">
+        <h3>Is this therapy?</h3>
+        <p> -I’ve tried therapy but need something action-driven.<br>
+            -Talking about problems isn’t the same as fixing them.<br>
+            -Without action, old habits return stronger.<br>
+            -This is high-impact coaching for leaders ready to do the work.</p>
+        <a href="#contact" class="btn btn-primary">Book a Discovery Call</a>
+      </div>
+
+      <div class="faq-card">
+        <h3>What’s the difference between the programs?</h3>
+        <p> -I want to pick the right level of transformation.<br>
+            -Choosing the wrong fit can waste time and effort.<br>
+            -You risk burnout or plateauing.<br>
+            -Choose Reset for habits, Shadow Work for depth, or Enterprise for teams.</p>
+        <a href="#coaching" class="btn btn-primary">Compare Packages</a>
+      </div>
+
+      <div class="faq-card">
+        <h3>Can I sample the coaching content?</h3>
+        <p> -I want to test the vibe before committing.<br>
+            -Blind signups don’t build trust.<br>
+            -Without clarity, you stay undecided.<br>
+            -Listen to free episodes. See how it lands.</p>
+        <a href="#coaching" class="btn btn-secondary">🎧 Listen to the Podcast</a>
+      </div>
+
+      <div class="faq-card">
+        <h3>Can this help with burnout or procrastination?</h3>
+        <p> -I’m stuck in cycles of stress, avoidance, and fatigue.<br>
+            -Surface-level fixes don’t solve the root.<br>
+            -Burnout spreads into every area of life.<br>
+            -We don’t treat symptoms—we reconstruct from the inside out.</p>
+        <a href="#contact" class="btn btn-primary">Start Your Reset</a>
+      </div>
+
+      <!-- General -->
+      <div class="faq-card">
+        <h3>How do I get started?</h3>
+        <p> -I’m ready for support but don’t know the next step.<br>
+            -Delaying now delays your results.<br>
+            -Every day you wait, costs add up.<br>
+            -Fill out the contact form. We respond within the hour.</p>
+        <a href="#contact" class="btn btn-secondary">Contact Us Now</a>
+      </div>
+
+      <div class="faq-card">
+        <h3>Do you offer refunds?</h3>
+        <p> -I want to make sure this is worth it.<br>
+            -Some providers offer easy outs and weak service.<br>
+            -That leads to indecision and low commitment.<br>
+            -We don’t offer refunds—because we commit fully, and we expect you to do the same.</p>
+        <a href="#contact" class="btn btn-secondary">Let’s Get Results</a>
+      </div>
+
+      <div class="faq card">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have questions? Want to discuss a custom solution? We'd love to hear from you.</p>
+        <a href="https://forms.gle/Tb6fFy8X3BAusQUe6" class="btn btn-secondary">Complete our Questionnaire</a>
+    </div>
+
+    </div>
+  </div>
+</section>
+       <!-- Updated Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get Started Today</h2>
+            <p class="section-subtitle">Tell us about your administrative needs and we'll contact you within 24 hours.</p>
+            
+            <div class="contact-form">
+                <form id="simpleContactForm" action="mailto:AdminPro360@proton.me" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="fullName">Full Name*</label>
+                        <input type="text" id="fullName" name="fullName" class="form-control" required>
+            </div>
+        
+                <div class="form-group">
+                    <label for="contact">WhatsApp/Phone Number*</label>
+                    <input type="tel" id="contact" name="contact" class="form-control" required>
+                </div>
+        
+            <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="description">How can we help you?*</label>
+                <textarea id="description" name="description" class="form-control" required placeholder="Briefly describe your administrative challenges/ coaching needs..."></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Send Request
+            </button>
+        
+        <p class="form-note">
+            We'll never share your information. Typically responds within 24 hours.
+        </p>
+    </form>
+</div>
+            </div>
+        </div>
+    </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="c:\Users\angel\OneDrive\Documents\Backed up\Desktop\New folder (2)\ap360.png" alt="AdminPro360 Logo">
+                        <div class="logo-text" style="color: white;">AdminPro<span style="color: var(--secondary);">360</span></div>
+                    </div>
+                    <p style="margin-top: 15px; opacity: 0.8;">Comprehensive 360° administrative solutions for modern businesses.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><input type="checkbox" required><a href="c:\Users\angel\OneDrive\Documents\Backed up\Desktop\New folder (2)\ADMINPRO360 SOLUTIONS TERMS OF SERVICE.txt" target="_blank"> I agree to the Terms of Service</a></li>
+                        <li><input type="checkbox" required><a href="c:\Users\angel\OneDrive\Documents\Backed up\Desktop\New folder (2)\AdminPro360 Privacy Policy.txt" target="_blank"> I agree to the Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Bestenbier Avenue, Elsies River</li>
+                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i> +27 61 167 2121</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> AdminPro360@proton.me</li>
+                        <li><i class="fas fa-clock" style="margin-right: 10px;"></i> Mon-Fri: 8AM-5PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 AdminPro360 Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script>
+        // Podcast Subscription Handler
+        document.getElementById('podcastSubscribe').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input').value;
+            alert(`Thank you for subscribing! We've sent a confirmation to ${email}`);
+            this.reset();
+        });
+        
+        // Audio Player Fallback
+        document.querySelectorAll('audio').forEach(player => {
+            player.addEventListener('error', function() {
+                this.parentElement.querySelector('a').style.display = 'block';
+            });
+        });
+    </script>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if(this.getAttribute('href') === '#') return;
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if(mainNav.classList.contains('active')) {
+                        mainNav.classList.remove('active');
+                        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                }
+            });
+        });
+        
+        // Pricing Toggle
+        const billingToggle = document.getElementById('billingToggle');
+        const prices = document.querySelectorAll('.price');
+
+        billingToggle.addEventListener('change', function () {
+            prices.forEach(price => {
+                if (this.checked) {
+                    const annualPrice = price.getAttribute('data-annually');
+                    if (annualPrice) {
+                        price.innerHTML = `<span>R</span>${annualPrice}<span>/yr</span>`;
+                    }
+                } else {
+                    const monthlyPrice = price.getAttribute('data-monthly');
+                    if (monthlyPrice) {
+                        price.innerHTML = `<span>R</span>${monthlyPrice}<span>/mo</span>`;
+                    }
+                }
+            });
+        });
+
+        
+        // Testimonial Slider
+        const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+        const sliderDots = document.querySelectorAll('.slider-dot');
+        let currentSlide = 0;
+        
+        function showSlide(index) {
+            testimonialSlides.forEach(slide => slide.classList.remove('active'));
+            sliderDots.forEach(dot => dot.classList.remove('active'));
+            
+            testimonialSlides[index].classList.add('active');
+            sliderDots[index].classList.add('active');
+            currentSlide = index;
+        }
+        
+        sliderDots.forEach(dot => {
+            dot.addEventListener('click', function() {
+                const slideIndex = parseInt(this.getAttribute('data-slide'));
+                showSlide(slideIndex);
+            });
+        });
+        
+        // Auto-rotate testimonials
+        setInterval(() => {
+            let nextSlide = (currentSlide + 1) % testimonialSlides.length;
+            showSlide(nextSlide);
+        }, 8000);
+        
+        // Podcast Subscription Handler
+        document.getElementById('podcastSubscribe').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input').value;
+            alert(`Thank you for subscribing! We've sent a confirmation to ${email}`);
+            this.reset();
+        });
+        
+        // Audio Player Fallback
+        document.querySelectorAll('audio').forEach(player => {
+            player.addEventListener('error', function() {
+                this.parentElement.querySelector('a').style.display = 'block';
+            });
+        });
+        
+        // Scroll Animation - Add class when elements come into view
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.feature-card, .pricing-card, .testimonial-slide');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if(elementPosition < windowHeight - 100) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        // Form Handling
+        document.getElementById('simpleContactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const formData = {
+                name: document.getElementById('fullName').value,
+                contact: document.getElementById('contact').value,
+                email: document.getElementById('email').value,
+                description: document.getElementById('description').value,
+                timestamp: new Date().toISOString()
+            };
+            
+            // Here you would typically send to your backend or email service
+            console.log('Form submitted:', formData);
+            
+            // Show success message
+            alert(`Thank you, ${formData.name}! We've received your request and will contact you shortly at ${formData.contact} or ${formData.email}.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Set initial styles for animation
+        document.querySelectorAll('.feature-card, .pricing-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+        
+        // Google Analytics (replace with your actual tracking ID)
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</body>
+</html>
